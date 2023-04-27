@@ -25,7 +25,7 @@
   @include title(1.75rem);
 }
 
-.line--text {
+.link--text {
   @include text(1.125rem);
   color: variables.$secondary-color;
   text-decoration: underline;

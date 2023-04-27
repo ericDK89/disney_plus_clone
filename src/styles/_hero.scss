@@ -1,0 +1,64 @@
+@use "variables";
+
+.hero {
+  padding: 5.6vw;
+  min-height: 80vh;
+  background-image: url(../../dist/assets/images/hero_desktop.jpeg);
+  background-size: cover;
+  text-align: center;
+
+  &__content {
+    max-width: 640px;
+    width: 100%;
+
+    &__branding {
+      max-width: 320px;
+      width: 100%;
+      margin: 0 auto 2.375rem;
+
+      &__img {
+        width: 100%;
+      }
+    }
+
+    .title--small {
+      margin-bottom: 4rem;
+    }
+
+    &__paragraph {
+      margin-bottom: 1.25rem;
+    }
+
+    &__combos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__combo {
+        width: calc(50% - 12px);
+
+        &__img {
+          max-height: 3.75rem;
+        }
+
+        &__btn {
+          display: block;
+
+          width: 100%;
+          height: 3.75rem;
+
+          color: variables.$secondary-color;
+          background-color: variables.$btn-bg-color;
+          border-radius: 4px;
+
+          margin-top: 2vw;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    &__paragraph {
+      margin: 3.75rem 0 0;
+    }
+  }
+}

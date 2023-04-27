@@ -1,4 +1,5 @@
 @use "variables";
+@use "hero";
 
 @mixin text($fontSize: 1rem) {
   font-size: $fontSize;
@@ -19,4 +20,8 @@
 
 body {
   background-color: variables.$bg-color;
+}
+
+button {
+  cursor: pointer;
 }
