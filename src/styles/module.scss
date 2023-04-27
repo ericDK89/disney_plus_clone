@@ -1,0 +1,32 @@
+@use "variables";
+@import "base";
+
+.text--big {
+  @include text(1.125rem);
+}
+
+.text {
+  @include text;
+}
+
+.text--small {
+  @include text(0.75rem);
+}
+
+.title--big {
+  @include title(2.75rem);
+}
+
+.title {
+  @include title;
+}
+
+.title--small {
+  @include title(1.75rem);
+}
+
+.line--text {
+  @include text(1.125rem);
+  color: variables.$secondary-color;
+  text-decoration: underline;
+}

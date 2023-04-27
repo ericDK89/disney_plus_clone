@@ -1,5 +1,22 @@
+@use "variables";
+
+@mixin text($fontSize: 1rem) {
+  font-size: $fontSize;
+  line-height: $fontSize + 0.625rem;
+  color: variables.$primary-color;
+}
+
+@mixin title($fontSize: 2.5rem) {
+  @include text($fontSize);
+  color: variables.$secondary-color;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: variables.$bg-color;
 }
