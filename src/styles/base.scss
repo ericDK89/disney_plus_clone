@@ -1,6 +1,18 @@
 @use "variables";
 @use "hero";
 
+@font-face {
+  font-family: Avenir;
+  src: url(../assets/fonts/fonts/Avenir-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(../assets/fonts/fonts/Avenir-Bold.woff2);
+  font-weight: 700;
+}
+
 @mixin text($fontSize: 1rem) {
   font-size: $fontSize;
   line-height: $fontSize + 0.625rem;
@@ -16,6 +28,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Avenir, sans-serif;
 }
 
 body {
