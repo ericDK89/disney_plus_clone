@@ -1,0 +1,38 @@
+@use "variables";
+
+.shows {
+  padding: 2vw 5.6vw;
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+
+    &__btn {
+      color: variables.$secondary-color;
+      font-size: 1.25rem;
+      border: none;
+
+      padding-bottom: 0.3125rem;
+      background: none;
+      margin: 0 1vw;
+
+      &--is-active {
+        border-bottom: 5px solid variables.$secondary-color;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.75rem;
+
+    &__item {
+      &__img {
+        max-width: 100%;
+        border-radius: 4px;
+      }
+    }
+  }
+}

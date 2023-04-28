@@ -25,7 +25,7 @@ function compileImages() {
 
 function defaultTask(cb) {
   compileSass();
-  compileImages();
+  // compileImages(); uncomment on first npm run gulp
   cb();
 }
 
