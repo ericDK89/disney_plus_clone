@@ -36,7 +36,7 @@
             />
             <button
               type="button"
-              class="hero__content__combos__combo__btn text--big"
+              class="hero__content__combos__combo__btn text--big btn"
             >
               ASSINE AGORA
             </button>
@@ -51,7 +51,7 @@
             />
             <button
               type="button"
-              class="hero__content__combos__combo__btn text--big"
+              class="hero__content__combos__combo__btn text--big btn"
             >
               ASSINE AGORA
             </button>
@@ -68,12 +68,18 @@
 
     <section class="shows">
       <nav class="shows__tabs">
-        <button class="shows__tabs__btn shows__tabs__btn--is-active">
+        <button
+          class="shows__tabs__btn shows__tabs__btn--is-active"
+          data-tab-btn="em_breve"
+        >
           EM BREVE</button
-        ><button class="shows__tabs__btn">MAIS POPULARES</button
-        ><button class="shows__tabs__btn">MAIS NO STAR+</button>
+        ><button class="shows__tabs__btn" data-tab-btn="mais_populares">
+          MAIS POPULARES</button
+        ><button class="shows__tabs__btn" data-tab-btn="mais_no_start">
+          MAIS NO STAR+
+        </button>
       </nav>
-      <ul class="shows__list">
+      <ul class="shows__list shows__list--is-active" data-tab-id="em_breve">
         <li class="shows__list__item">
           <img
             class="shows__list__item__img"
@@ -117,6 +123,154 @@
           />
         </li>
       </ul>
+      <ul class="shows__list" data-tab-id="mais_populares">
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_populares/bluey.jpg"
+            alt="Spidey"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_populares/bluey.jpg"
+            alt="Desencantada"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_populares/bluey.jpg"
+            alt="Lobisomen"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_populares/bluey.jpg"
+            alt="Sem Limites"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_populares/bluey.jpg"
+            alt="The Santa Clauses"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_populares/bluey.jpg"
+            alt="Willow"
+          />
+        </li>
+      </ul>
+      <ul class="shows__list" data-tab-id="mais_no_start">
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_no_star_plus/libertadores.jpg"
+            alt="Spidey"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_no_star_plus/libertadores.jpg"
+            alt="Desencantada"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_no_star_plus/libertadores.jpg"
+            alt="Lobisomen"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_no_star_plus/libertadores.jpg"
+            alt="Sem Limites"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_no_star_plus/libertadores.jpg"
+            alt="The Santa Clauses"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            class="shows__list__item__img"
+            src="dist/assets/images/mais_no_star_plus/libertadores.jpg"
+            alt="Willow"
+          />
+        </li>
+      </ul>
     </section>
+
+    <section class="plains">
+      <h2 class="title--big plains__title">Escolha seu plano</h2>
+      <ul class="plains__list">
+        <li class="plains__list__item">
+          <img
+            class="plains__list__item__img"
+            src="dist/assets/images/logos/disneyplus_underline.png"
+            alt="Disney+"
+          />
+          <strong class="title--small plains__list__item__strong"
+            >R$ 27,90/mês*</strong
+          >
+          <p class="text--big">
+            No Disney+ você encontra as últimas estreias do cinema, originais e
+            clássicos inesquecíveis.
+          </p>
+          <button class="btn">Assine agora</button>
+        </li>
+
+        <li class="plains__list__item">
+          <img
+            class="plains__list__item__img"
+            src="dist/assets/images/logos/disney_star_plus_sm.png"
+            alt="Disney+"
+          />
+          <strong class="title--small plains__list__item__strong"
+            >R$ 27,90/mês*</strong
+          >
+          <p class="text--big">
+            No Disney+ você encontra as últimas estreias do cinema, originais e
+            clássicos inesquecíveis.
+          </p>
+          <button class="btn">Assine agora</button>
+        </li>
+
+        <li class="plains__list__item">
+          <img
+            class="plains__list__item__img"
+            src="dist/assets/images/logos/disney_star_plus_starzplay_underline.png"
+            alt="Disney+"
+          />
+          <strong class="title--small plains__list__item__strong"
+            >R$ 27,90/mês*</strong
+          >
+          <p class="text--big">
+            No Disney+ você encontra as últimas estreias do cinema, originais e
+            clássicos inesquecíveis.
+          </p>
+          <button class="btn">Assine agora</button>
+        </li>
+      </ul>
+
+      <p class="text--small plains__disclaimer">
+        *O preço pode varias caso a assinatura seja feita através de outras
+        plataformas
+      </p>
+    </section>
+
+    <script src="src/script/main.js"></script>
   </body>
 </html>

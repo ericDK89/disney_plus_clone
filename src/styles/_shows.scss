@@ -1,6 +1,7 @@
 @use "variables";
 
 .shows {
+  min-height: 50vw;
   padding: 2vw 5.6vw;
 
   &__tabs {
@@ -23,10 +24,14 @@
   }
 
   &__list {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2.75rem;
+
+    &--is-active {
+      display: grid;
+    }
 
     &__item {
       &__img {
