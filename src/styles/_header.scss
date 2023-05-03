@@ -1,0 +1,59 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #040714;
+  transition: background-color 0.5s ease;
+  z-index: 1;
+
+  &--is-hidden {
+    background-color: transparent;
+
+    .header__logo,
+    .header__link__item:first-child {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease;
+    }
+  }
+
+  &__container {
+    padding: 0.5rem 2.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    max-width: 80px;
+    width: 100%;
+    margin: 5px;
+
+    transition: opacity 0.5s ease;
+  }
+
+  &__link {
+    display: flex;
+
+    &__item {
+      margin: 5px;
+      transition: opacity 0.5s ease;
+    }
+  }
+
+  .btn {
+    height: 3.125rem;
+
+    display: flex;
+    align-items: center;
+
+    &--no-border {
+      border: none;
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

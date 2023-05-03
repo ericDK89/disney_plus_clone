@@ -7,6 +7,11 @@
   background-size: cover;
   text-align: center;
 
+  .btn {
+    margin-top: 2vw;
+    margin-bottom: 0.5rem;
+  }
+
   &__content {
     max-width: 640px;
     width: 100%;
@@ -18,7 +23,7 @@
       width: 100%;
       margin: 0 auto 2.375rem;
 
-      &__img {
+      .hero__content__branding__img {
         width: 100%;
       }
     }
@@ -49,4 +54,8 @@
       margin: 3.75rem 0 0;
     }
   }
+}
+
+.hero__content__branding__img {
+  width: 100%;
 }
